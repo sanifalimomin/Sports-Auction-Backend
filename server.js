@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const port = 3000;
+const port = 8080;
 const app = express();
 app.use(bodyParser.json());
 const { TEAMS, PLAYERS } = require("./constants");
