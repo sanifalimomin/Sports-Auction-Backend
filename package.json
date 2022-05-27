@@ -11,22 +11,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bcrypt": "^3.0.8",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.7",
     "nodemon": "^1.19.3"
   },
   "dependencies": {
-    "multer": "^1.4.2",
-    "nodemailer": "^6.4.11"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanifalimomin/intermediate-node-course.git"
+    "url": "git+https://github.com/sanifalimomin/aagpl-auction-backend.git"
   },
   "bugs": {
-    "url": "https://github.com/sanifalimomin/intermediate-node-course/issues"
+    "url": "https://github.com/sanifalimomin/aagpl-auction-backend/issues"
   },
-  "homepage": "https://github.com/sanifalimomin/intermediate-node-course#readme"
+  "homepage": "https://github.com/sanifalimomin/aagpl-auction-backend#readme"
 }
