@@ -1,1 +1,50 @@
-[{"id":1,"name":"AAGSA","pointsRemaining":0,"playersRemaining":0},{"id":2,"name":"REC","pointsRemaining":18,"playersRemaining":0},{"id":3,"name":"VOLUNTEER","pointsRemaining":43,"playersRemaining":0},{"id":4,"name":"YSB","pointsRemaining":0,"playersRemaining":0},{"id":5,"name":"WSS","pointsRemaining":0,"playersRemaining":0},{"id":6,"name":"MAYAIT","pointsRemaining":4,"playersRemaining":0},{"id":7,"name":"PIPE BAND","pointsRemaining":3,"playersRemaining":0},{"id":8,"name":"SCOUT","pointsRemaining":0,"playersRemaining":0},{"id":9,"name":"CERT","pointsRemaining":1,"playersRemaining":0},{"id":10,"name":"PASC","pointsRemaining":0,"playersRemaining":0}]
+[
+  {
+    "id": 1,
+    "name": "AAGSA",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 2,
+    "name": "REC",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 3,
+    "name": "HRDC",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 4,
+    "name": "YSB",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 5,
+    "name": "WSS",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 6,
+    "name": "SWB",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 7,
+    "name": "PASC",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  },
+  {
+    "id": 8,
+    "name": "SCOUT",
+    "pointsRemaining": 120,
+    "playersRemaining": 12
+  }
+]

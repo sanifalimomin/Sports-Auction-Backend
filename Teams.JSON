@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "AAGSA",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 2,
+      "name": "REC",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 3,
+      "name": "HRDC",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 4,
+      "name": "YSB",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 5,
+      "name": "WSS",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 6,
+      "name": "SWB",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 7,
+      "name": "PASC",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    },
+    {
+      "id": 8,
+      "name": "SCOUT",
+      "pointsRemaining": 120,
+      "playersRemaining": 12
+    }
+  ]
