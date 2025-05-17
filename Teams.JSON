@@ -1,50 +1,74 @@
 [
     {
       "id": 1,
-      "name": "AAGSA",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " AAGSA ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 2,
-      "name": "REC",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " Funeral Service ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 3,
-      "name": "HRDC",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " HRDC ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 4,
-      "name": "YSB",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " YSB ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 5,
-      "name": "WSS",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " WSS ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 6,
-      "name": "SWB",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " SWB ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 7,
-      "name": "PASC",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " PASC ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     },
     {
       "id": 8,
-      "name": "SCOUT",
-      "pointsRemaining": 120,
-      "playersRemaining": 12
+      "name": " SCOUT ",
+      "pointsRemaining": 150,
+      "playersRemaining": 12,
+      "maxGold": 100,
+      "minDiamond": 20,
+      "minPlatinum": 30
     }
   ]

@@ -88,3 +88,32 @@ app.get("/players", (req, res) => {
     res.json({ data });
   });
 });
+
+// CREATE PLAYER
+app.post("/random-players", (req, res) => {
+  const content = req.body.data;
+  console.log(content)
+  fs.writeFile('random-players.txt', JSON.stringify(content), 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing file:', err);
+      res.status(500).json({ error: 'Failed to store data' });
+      return;
+    }
+    res.json({ message: 'Data stored successfully' });
+  });
+});
+
+
+// GET Random PLAYERS
+app.get("/random-players", (req, res) => {
+  fs.readFile('random-players.txt', 'utf8', (err, players) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      res.status(500).json({ error: 'Failed to retrieve data' });
+      return;
+    }
+    const data=JSON.parse(players);
+    console.log(data);
+    res.json({ data });
+  });
+});
