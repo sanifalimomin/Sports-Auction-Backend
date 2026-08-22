@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Avatar, Chip, Divider, Button } from "@material-ui/core";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRandomPlayerStyles } from './styles';
+import { resolvePlayerImage } from 'utils/playerImages';
 
 // Slash-separated path segments ending in a known image extension. Segments
 // cannot contain dots, so "..", backslashes, absolute paths and absolute URLs
@@ -28,12 +29,11 @@ const PlayerCard = ({ player, currentlySelected, onSelect, onSkip, playerPositio
 
   const getImageSrc = () => {
     try {
-      // `player.picture` arrives from the API, so it is never interpolated into
-      // the require() path unvalidated: restrict it to a bare filename with a
-      // known image extension. This keeps the webpack context lookup from being
-      // steered outside assets/images by a crafted value.
+      // `player.picture` arrives from the API. Restrict it to a relative image
+      // path so a crafted value cannot steer the asset lookup outside
+      // assets/images.
       if (player.picture && SAFE_PICTURE_NAME.test(player.picture)) {
-        return require(`assets/images/${player.picture}`);
+        return resolvePlayerImage(player.picture, PLACEHOLDER_IMAGE);
       }
       return PLACEHOLDER_IMAGE;
     } catch (error) {

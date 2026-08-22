@@ -6,10 +6,14 @@ import axios from 'axios';
  * same-origin relative requests, which lets calls inherit the page's TLS rather
  * than being pinned to plaintext http://.
  *
- * Set REACT_APP_API_BASE_URL in .env.local for development, or at build time
- * for production. See .env.example.
+ * Set VITE_API_BASE_URL (or REACT_APP_API_BASE_URL) in .env.local for
+ * development, or at build time for production. See .env.example.
  */
-const baseURL = (process.env.REACT_APP_API_BASE_URL || '')
+const baseURL = (
+  import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.REACT_APP_API_BASE_URL ||
+  ''
+)
   .trim()
   .replace(/\/+$/, '');
 
@@ -20,7 +24,7 @@ if (
 ) {
   // Browsers block this as mixed content; surface the misconfiguration loudly.
   console.error(
-    'REACT_APP_API_BASE_URL uses http:// while the app is served over https://. ' +
+    'API base URL uses http:// while the app is served over https://. ' +
       'API requests will be blocked as mixed content.'
   );
 }

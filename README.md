@@ -53,7 +53,7 @@ cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env.local
 ```
 
-Set `REACT_APP_API_BASE_URL=http://localhost:8080` so the React dev server can reach the API.
+Set `VITE_API_BASE_URL=http://localhost:8080` so the Vite dev server can reach the API.
 
 ### 3. Start MongoDB
 
@@ -91,9 +91,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 │   ├── data/seed/           # Sample JSON for seeding
 │   ├── scripts/seed.js      # Database seed script
 │   └── package.json
-├── frontend/                # Create React App UI
+├── frontend/                # React + Vite UI
 │   ├── src/
-│   │   ├── api/             # Axios client (REACT_APP_API_BASE_URL)
+│   │   ├── api/             # Axios client (VITE_API_BASE_URL)
 │   │   └── components/      # Auction screens
 │   ├── public/
 │   └── package.json
@@ -137,30 +137,30 @@ When `API_KEY` is set, POST requests must send `x-api-key: <key>` or `Authorizat
 
 | Variable                  | Required | Default | Description                          |
 | ------------------------- | -------- | ------- | ------------------------------------ |
-| `REACT_APP_API_BASE_URL`  | Yes*     | —       | Backend base URL, e.g. `http://localhost:8080` |
+| `VITE_API_BASE_URL`       | Yes*     | —       | Backend base URL, e.g. `http://localhost:8080` |
+| `REACT_APP_API_BASE_URL`  | No       | —       | Alias for existing `.env.local` files          |
 
 \* Required when frontend and backend run on different origins (typical local dev).
 
-Variables prefixed with `REACT_APP_` are embedded in the public JS bundle at build time — never put secrets here.
+Variables prefixed with `VITE_` or `REACT_APP_` are embedded in the public JS bundle at build time — never put secrets here.
 
 ## Frontend Development
 
 ```bash
 cd frontend
-npm start          # Dev server with hot reload
-npm run build      # Production build to frontend/build/
-npm test           # Jest test runner
+npm start          # Vite dev server with hot reload (port 3000)
+npm run build      # Production build to frontend/dist/
 ```
 
-The API client lives in `frontend/src/api/index.jsx` and reads `REACT_APP_API_BASE_URL`.
+The API client lives in `frontend/src/api/index.jsx` and reads `VITE_API_BASE_URL`.
 
 If deploying the static build separately from the API, update `public/_headers` CSP `connect-src` to include the API origin.
 
 ## Deployment Notes
 
 - **Backend**: Deploy as a Node process (Railway, Render, EC2, etc.). Set `MONGODB_URI`, `ALLOWED_ORIGIN` (your frontend URL), and optionally `API_KEY`.
-- **Frontend**: Build with `npm run build:frontend`, then serve `frontend/build/` from any static host (Netlify, Cloudflare Pages, S3 + CloudFront).
-- **Same-origin**: For production, a reverse proxy can serve the React build and proxy `/teams`, `/players`, etc. to the API — then leave `REACT_APP_API_BASE_URL` empty.
+- **Frontend**: Build with `npm run build:frontend`, then serve `frontend/dist/` from any static host (Netlify, Cloudflare Pages, S3 + CloudFront).
+- **Same-origin**: For production, a reverse proxy can serve the Vite build and proxy `/teams`, `/players`, etc. to the API — then leave `VITE_API_BASE_URL` empty.
 - Set `ALLOWED_ORIGIN` to match your deployed frontend URL for CORS.
 
 ## Root Scripts

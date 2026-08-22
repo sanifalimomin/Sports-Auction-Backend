@@ -2,7 +2,7 @@
 # (Netlify, Cloudflare Pages). For nginx/Apache/S3+CloudFront, mirror these
 # in the server config -- see the "Security headers" section of README.md.
 #
-# NOTE: connect-src must be widened if REACT_APP_API_BASE_URL points at a
+# NOTE: connect-src must be widened if VITE_API_BASE_URL points at a
 # different origin than the one serving this app.
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
