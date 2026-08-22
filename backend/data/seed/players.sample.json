@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "fullName": "Player One",
+    "name": "P1",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Batsman",
+    "picture": "images/player1.png",
+    "category": "Gold"
+  },
+  {
+    "id": 2,
+    "fullName": "Player Two",
+    "name": "P2",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Bowler",
+    "picture": "images/player2.png",
+    "category": "Gold"
+  },
+  {
+    "id": 3,
+    "fullName": "Player Three",
+    "name": "P3",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "All Rounder",
+    "picture": "images/player3.png",
+    "category": "Diamond"
+  },
+  {
+    "id": 4,
+    "fullName": "Player Four",
+    "name": "P4",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Wicket Keeper",
+    "picture": "images/player4.png",
+    "category": "Platinum"
+  },
+  {
+    "id": 5,
+    "fullName": "Player Five",
+    "name": "P5",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Batsman",
+    "picture": "images/player5.png",
+    "category": "Gold"
+  },
+  {
+    "id": 6,
+    "fullName": "Player Six",
+    "name": "P6",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Bowler",
+    "picture": "images/player6.png",
+    "category": "Diamond"
+  },
+  {
+    "id": 7,
+    "fullName": "Player Seven",
+    "name": "P7",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "All Rounder",
+    "picture": "images/player7.png",
+    "category": "Platinum"
+  },
+  {
+    "id": 8,
+    "fullName": "Player Eight",
+    "name": "P8",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Batsman",
+    "picture": "images/player8.png",
+    "category": "Gold"
+  },
+  {
+    "id": 9,
+    "fullName": "Player Nine",
+    "name": "P9",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "Bowler",
+    "picture": "images/player9.png",
+    "category": "Diamond"
+  },
+  {
+    "id": 10,
+    "fullName": "Player Ten",
+    "name": "P10",
+    "points": 0,
+    "allocated": 0,
+    "teamId": 0,
+    "role": "All Rounder",
+    "picture": "images/player10.png",
+    "category": "Platinum"
+  }
+]
