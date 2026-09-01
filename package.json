@@ -1,38 +1,18 @@
 {
-  "name": "aagpl-draft-backend",
+  "name": "sports-auction",
   "version": "1.0.0",
-  "description": "Check out the issues of this repo for the course materials.",
-  "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
+  "private": true,
+  "description": "Full-stack sports/cricket auction draft application",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm start --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "start:frontend": "npm start --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "seed": "npm run seed --prefix backend"
   },
-  "keywords": [],
-  "author": "Sanif Ali Momin",
-  "license": "ISC",
-  "devDependencies": {
-    "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.7",
-    "nodemon": "^1.19.3"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "fs": "0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.7",
-    "nodemon": "^1.19.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanifalimomin/aagpl-auction-backend.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sanifalimomin/aagpl-auction-backend/issues"
-  },
-  "homepage": "https://github.com/sanifalimomin/aagpl-auction-backend#readme"
+  "engines": {
+    "node": ">=18"
+  }
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Team Alpha",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 2,
+    "name": "Team Beta",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 3,
+    "name": "Team Gamma",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 4,
+    "name": "Team Delta",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 5,
+    "name": "Team Epsilon",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 6,
+    "name": "Team Zeta",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 7,
+    "name": "Team Eta",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  },
+  {
+    "id": 8,
+    "name": "Team Theta",
+    "pointsRemaining": 150,
+    "playersRemaining": 12,
+    "maxGold": 100,
+    "minDiamond": 20,
+    "minPlatinum": 30
+  }
+]
